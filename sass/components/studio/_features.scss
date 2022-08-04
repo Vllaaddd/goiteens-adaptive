@@ -8,6 +8,10 @@
         margin: -15px;
         flex-wrap: wrap;
     }
+
+    @media (min-width:$mobile) {
+        flex-direction: column;
+    }
 }
 
 .features-title{
