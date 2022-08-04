@@ -1,6 +1,13 @@
 .features{
-    display: flex;
-    justify-content: space-between;
+    @media (min-width: $desktop) {
+        justify-content: space-between;
+    }
+
+    @media (min-width: $tablet) {
+        display: flex;
+        margin: -15px;
+        flex-wrap: wrap;
+    }
 }
 
 .features-title{
@@ -10,6 +17,19 @@
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-align: center;
+
+    @media (min-width: $mobile) {
+        text-align: left;
+    }
+
+    @media (min-width: $tablet) {
+        text-align: left;
+    }
+
+    @media (min-width: $desktop) {
+        text-align: left;
+    }
 }
 
 .features-description{
@@ -23,10 +43,24 @@
 }
 
 .features-item{
-    width: 270px;
+    width: 100%;
+
+    @media (min-width: $tablet) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 270px;
+    }
 }
 
 .features-icon{
+
+    @media (min-width:$tablet) {
+        width: 100%;
+    }
+
     background-color: var(--grey);
     width: 270px;
     height: 120px;
