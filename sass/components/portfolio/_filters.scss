@@ -1,0 +1,41 @@
+.filters_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+}
+
+.filter-button:not(:last-child){
+    margin-right: 8px;
+}
+
+.filter-button{
+    cursor: pointer;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+.link-text{
+    color: var(--primary-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 25px;
+    background-color: #F5F4FA;
+    min-width: 73px;
+
+    &:hover,
+    &:focus
+    {
+        background-color: var(--accent-color);
+        color: var(--secondary-color);
+    }
+}

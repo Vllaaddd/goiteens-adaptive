@@ -1,0 +1,73 @@
+.team{
+    background-color: #F5F4FA;
+}
+
+.peoples{
+    display: flex;
+}
+
+.team_card{
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001F;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    padding-bottom: 30px;
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+
+.team-img{
+    width: 270px;
+    height: 260px;
+    margin-bottom: 30px;
+}
+
+.names{
+    color: var(--primary-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.description{
+    color: var(--text-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.social-network-list{
+    @include centeredFlex();
+}
+
+.social-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.social-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--svg);
+
+    &:hover,
+    &:focus
+    {
+        fill: var(--secondary-color);
+        background-color: var(--accent-color);
+    }
+}

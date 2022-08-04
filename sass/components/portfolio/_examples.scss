@@ -1,0 +1,82 @@
+.examples{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.example-card{
+    display: block;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+    flex: 0 32%;
+
+    &:hover{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.img-thumb{
+    position: relative;
+    overflow: hidden;
+
+    &:hover .overlay,
+    &:focus .overlay{
+        transform: translateY(0);
+    }
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    padding: 35px 15px;
+    margin: 0;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    text-align: center;
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.example_image{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.items-descritption{
+    color: var(--primary-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2px;
+    letter-spacing: 0.06em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.example-description{
+    color: var(--text-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,23 @@
+.customers-list{
+    @include centeredFlex();
+}
+
+.customer-link{
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--svg);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--svg);
+
+    &:hover{
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.customer-item:not(:last-child){
+    margin-right: 30px;
+}
