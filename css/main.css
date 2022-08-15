@@ -521,7 +521,7 @@ ul {
           align-items: center;
   margin-bottom: 30px;
 }
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .features-icon {
     width: 100%;
   }
@@ -565,7 +565,7 @@ ul {
   width: 100%;
   padding-bottom: 30px;
 }
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .team_card {
     margin-bottom: 30px;
   }
@@ -732,7 +732,7 @@ ul {
 .customer-item:hover .customer-icon {
   fill: var(--accent-color);
 }
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .customer-item {
     width: calc((100% - 60px) / 2);
     margin: 15px;

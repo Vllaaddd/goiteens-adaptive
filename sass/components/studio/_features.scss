@@ -57,7 +57,7 @@
 
 .features-icon{
 
-    @media (min-width:$mobile) {
+    @media (max-width:767px) {
         width: 100%;
     }
 
