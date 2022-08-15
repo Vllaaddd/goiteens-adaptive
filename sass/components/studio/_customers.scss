@@ -1,14 +1,7 @@
 .customers-list{
-    @media (min-width: $desktop) {
-        @include centeredFlex();
-    }
-    
-    @media (min-width: $tablet) {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: -15px;
-    }
+    @include centeredFlex();
+    flex-wrap: wrap;
+    margin: -15px;
 }
 
 .customer-link{
@@ -30,12 +23,17 @@
         fill: var(--accent-color);
     }
 
+    @media (min-width: $mobile) {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
+
     @media (min-width: $tablet) {
         width: calc((100% - 4 * 15px) / 4);
         margin: 15px;
     }
 
     @media (min-width: $desktop) {
-        width: 170px;
+        width: calc((100% - 6 * 30px) / 6);
     }
 }

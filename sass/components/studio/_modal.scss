@@ -20,8 +20,6 @@
     top: 50%;
     left: 50%;
 
-    width: 528px;
-    height: 581px;
     padding: 40px;
 
     background-color: var(--secondary-color);
@@ -31,6 +29,19 @@
 
     .backdrop.is-hidden &{
         transform: translate(-50%, -50%) scale(0.7);
+    }
+
+    @media (min-width:$mobile) {
+        width: 450px;
+        max-height: 609px;
+        height: 100%;
+
+        overflow: scroll;
+    }
+
+    @media (min-width:$desktop) {
+        width: 528px;
+        height: 581px;
     }
 }
 

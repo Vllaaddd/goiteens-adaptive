@@ -19,11 +19,16 @@
     font-family: Roboto, sans-serif;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.2;
+    line-height: 1.4;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
     letter-spacing: 0.06em;
+
+    @media (max-width:1199px) {
+        font-size: 26px;
+        line-height: 1.6;
+    }
 }
 
 .button{
