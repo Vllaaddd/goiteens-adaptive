@@ -1,14 +1,35 @@
 .examples{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    @media (min-width:$tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+    
 }
 
 .example-card{
-    display: block;
-    margin-bottom: 30px;
     border: 1px solid #EEEEEE;
-    flex: 0 32%;
+
+    &:not(:last-child){
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (min-width:$tablet) {
+        display: block;
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    @media (min-width:$desktop) {
+        display: block;
+        flex-basis: calc((100% - 3 * 30px) / 3);
+        margin-left: 30px;
+        margin-top: 30px;
+    }
 
     &:hover{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);

@@ -5,18 +5,31 @@
 }
 
 .filters{
-    display: flex;
-    justify-content: center;
-}
+    @media (min-width:$mobile) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        margin-top: -15px;
+    }
 
-.filter-button:not(:last-child){
-    margin-right: 8px;
+    @media (min-width:$desktop) {
+        display: flex;
+        justify-content: center;
+    }
+    
 }
 
 .filter-button{
     cursor: pointer;
     height: 30px;
-    margin-bottom: 50px;
+
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+
+    @media (min-width:$mobile) and (max-width:767px){
+        margin-top: 15px;
+    }
 }
 
 .link-text{

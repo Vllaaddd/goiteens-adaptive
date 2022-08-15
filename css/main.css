@@ -754,6 +754,7 @@ ul {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-top: 30px;
 }
 
 @media (max-width: 767px) {
@@ -881,23 +882,39 @@ ul {
   margin-top: 94px;
 }
 
-.filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media (min-width: 480px) {
+  .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: -15px;
+  }
 }
-
-.filter-button:not(:last-child) {
-  margin-right: 8px;
+@media (min-width: 1200px) {
+  .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .filter-button {
   cursor: pointer;
   height: 30px;
-  margin-bottom: 50px;
+}
+.filter-button:not(:last-child) {
+  margin-right: 8px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .filter-button {
+    margin-top: 15px;
+  }
 }
 
 .link-text {
@@ -918,24 +935,43 @@ ul {
   color: var(--secondary-color);
 }
 
-.examples {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media (min-width: 768px) {
+  .examples {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .example-card {
-  display: block;
-  margin-bottom: 30px;
   border: 1px solid #EEEEEE;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 32%;
-          flex: 0 32%;
+}
+@media (max-width: 767px) {
+  .example-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .example-card {
+    display: block;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .example-card {
+    display: block;
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 .example-card:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
