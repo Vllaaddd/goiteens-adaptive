@@ -1,12 +1,12 @@
 .features{
-    @media (min-width: $desktop) {
-        justify-content: space-between;
-    }
-
     @media (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
+    }
+
+    @media (min-width: $desktop) {
+        justify-content: space-between;
     }
 }
 

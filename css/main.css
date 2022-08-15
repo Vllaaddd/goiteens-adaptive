@@ -438,13 +438,6 @@ ul {
   margin-bottom: 40px;
 }
 
-@media (min-width: 1200px) {
-  .features {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
 @media (min-width: 768px) {
   .features {
     display: -webkit-box;
@@ -453,6 +446,13 @@ ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
+  }
+}
+@media (min-width: 1200px) {
+  .features {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -565,7 +565,7 @@ ul {
   width: 100%;
   padding-bottom: 30px;
 }
-@media (min-width: 100px) {
+@media (max-width: 767px) {
   .team_card {
     margin-bottom: 30px;
   }
