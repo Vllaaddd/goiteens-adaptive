@@ -1,0 +1,41 @@
+.info-link:hover,
+.info-link:focus
+{
+    color: var(--accent-color);
+}
+
+.link-list
+{
+    @include centeredFlex(flex-start);
+    margin-left: auto;
+
+    @media (min-width:$tablet) {
+        flex-direction: column;
+        margin-left: none;
+    }
+
+    @media (min-width:$desktop) {
+        flex-direction: row;
+    }
+}
+
+.link-list li + li{
+    margin-left: 50px;
+}
+
+.info-link{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.link-list .info-link:hover,
+.link-list .info-link:focus
+{
+    fill: var(--accent-color);
+}
+
+.nav-icons{
+    margin-right: 10px;
+    fill: currentColor;
+}

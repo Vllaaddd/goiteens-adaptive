@@ -5,7 +5,11 @@
 @import"./utils/mixins";
 
 @import "./components/common";
-@import "./components/studio/header";
+@import "./components/header/header-mobile-menu";
+@import "./components/header/header-logo";
+@import "./components/header/header-networks";
+@import "./components/header/header-navigation";
+@import "./components/header/header-contacts";
 @import "./components/studio/hero";
 @import "./components/studio/modal";
 @import "./components/studio/form";

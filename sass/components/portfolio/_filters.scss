@@ -12,8 +12,11 @@
         margin-top: -15px;
     }
 
+    @media (min-width:$tablet) {
+        justify-content: center;
+    }
+
     @media (min-width:$desktop) {
-        display: flex;
         justify-content: center;
     }
     

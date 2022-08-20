@@ -1,0 +1,36 @@
+.mobile-button{
+    @media (max-width:767px) {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus{
+            fill: var(--accent-color);
+        } 
+
+        & .mobile-open{
+            display: none;
+        }
+
+        &.is-open .mobile-close{
+            display: none;
+        }
+
+        &.is-open .mobile-open{
+            display: block;
+        }
+    }
+
+    @media (min-width:$tablet) {
+        display: none;
+    }
+}
