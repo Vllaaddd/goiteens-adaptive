@@ -1,41 +1,76 @@
-.info-link:hover,
-.info-link:focus
-{
-    color: var(--accent-color);
+.contacts{
+    @media (max-width: 767px) {
+        margin-bottom: 64px;
+    }
+
+    @media (min-width: $tablet) {
+        margin-left: 89px;
+    }
 }
 
-.link-list
+.contacts-list
 {
-    @include centeredFlex(flex-start);
-    margin-left: auto;
+    display: flex;
+
+    @media (max-width: 767px) {
+        flex-direction: column-reverse;
+    }
 
     @media (min-width:$tablet) {
         flex-direction: column;
-        margin-left: none;
     }
 
     @media (min-width:$desktop) {
         flex-direction: row;
+        margin-left: auto;
     }
 }
 
-.link-list li + li{
-    margin-left: 50px;
+.contacts-list li + li{
+    @media (min-width:$desktop) {
+        margin-left: 50px;
+    }
 }
 
-.info-link{
-    display: flex;
-    align-items: center;
+.list-link-item:last-child{
+    @media (max-width: 767px) {
+        margin-bottom: 32px;
+    }
+}
+
+.contacts-link{
     color: var(--text-color);
-}
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
-.link-list .info-link:hover,
-.link-list .info-link:focus
-{
-    fill: var(--accent-color);
+    @media (max-width: 767px) {
+        font-size: 24px;
+    }
+
+    @media (min-width: $tablet) {
+        
+    }
+
+    @media (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:focus{
+        fill: var(--accent-color);
+        color: var(--accent-color);
+    }
 }
 
 .nav-icons{
+    @media (max-width: 767px) {
+        display: none;
+    }
+
     margin-right: 10px;
     fill: currentColor;
 }

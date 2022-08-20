@@ -1,7 +1,7 @@
 .mobile-button{
     @media (max-width:767px) {
-        position: absolute;
         top: 10px;
+        position: absolute;
         right: 15px;
     
         display: inline-flex;
@@ -17,20 +17,42 @@
             fill: var(--accent-color);
         } 
 
-        & .mobile-open{
-            display: none;
-        }
-
-        &.is-open .mobile-close{
+        & .mobile-close{
             display: none;
         }
 
         &.is-open .mobile-open{
+            display: none;
+        }
+
+        &.is-open .mobile-close{
             display: block;
         }
     }
 
     @media (min-width:$tablet) {
         display: none;
+    }
+}
+
+.mobile-menu{
+    @media (max-width: 767px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100vh;
+        
+        background-color: var(--secondary-color);
+
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 48px 83px 48px 40px;
+
+        &.is-open{
+            display: flex;
+        }
     }
 }
