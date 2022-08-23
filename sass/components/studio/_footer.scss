@@ -17,6 +17,7 @@
 
     @media (min-width:$desktop) {
         display: flex;
+        justify-content: flex-start;
         align-items: baseline;
     }
    

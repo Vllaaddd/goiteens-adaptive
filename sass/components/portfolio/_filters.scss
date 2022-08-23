@@ -5,7 +5,7 @@
 }
 
 .filters{
-    @media (min-width:$mobile) {
+    @media (max-width: 767px) {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 40px;
@@ -13,7 +13,9 @@
     }
 
     @media (min-width:$tablet) {
+        display: flex;
         justify-content: center;
+        margin-bottom: 40px;
     }
 
     @media (min-width:$desktop) {

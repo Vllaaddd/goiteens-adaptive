@@ -6,6 +6,9 @@
     @media (min-width: $tablet) {
         margin-left: 89px;
     }
+    @media (min-width: $desktop) {
+        margin-left: 300px;
+    }
 }
 
 .contacts-list
@@ -22,7 +25,7 @@
 
     @media (min-width:$desktop) {
         flex-direction: row;
-        margin-left: auto;
+        margin-left: aut;
     }
 }
 
