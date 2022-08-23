@@ -145,7 +145,7 @@ ul {
 
 @media (max-width: 767px) {
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     z-index: 99;
     top: 0;
     left: 0;
@@ -1139,7 +1139,7 @@ ul {
 .filter-button:not(:last-child) {
   margin-right: 8px;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .filter-button {
     margin-top: 15px;
   }

@@ -41,7 +41,7 @@
 
 .mobile-menu{
     @media (max-width: 767px) {
-        position: absolute;
+        position: fixed;
         z-index: 99;
         top: 0;
         left: 0;
