@@ -39,6 +39,12 @@
     @media (max-width: 767px) {
         margin-bottom: 32px;
     }
+    @media (min-width: $tablet) {
+        margin-top: 12px;
+    }
+    @media (min-width: $moblie) {
+        margin-top: 0;
+    }
 }
 
 .contacts-link{

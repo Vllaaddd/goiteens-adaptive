@@ -233,7 +233,14 @@ ul {
     letter-spacing: 0.02em;
   }
   .networks-item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
+  }
+  .networks-item:not(:last-child)::after {
+    content: "";
+    height: 100%;
+    width: 0;
+    border: 0.2px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
   }
 }
 
@@ -390,6 +397,11 @@ ul {
 @media (max-width: 767px) {
   .list-link-item:last-child {
     margin-bottom: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .list-link-item:last-child {
+    margin-top: 12px;
   }
 }
 
